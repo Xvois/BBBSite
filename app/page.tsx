@@ -3,63 +3,45 @@ import {Percent} from "lucide-react";
 import Link from "next/link";
 import {Separator} from "@/components/ui/separator";
 
-export default function Home() {
+export default function About() {
     return (
-        <main className="flex min-h-screen max-w-screen-lg mx-auto flex-col items-center p-8 lg:p-24 space-y-10">
+        <main className="space-y-10">
+
             <section className={"space-y-8"}>
                 <div>
                     <h1 className={"font-black text-6xl"}>BUILD BACK BURSARIES</h1>
-                    <p>a <span className={"font-black text-primary"}>BULU</span> campaign</p>
+                    <p>a <a href={'https://www.thesubath.com/bulu/'} className={"font-black text-primary underline decoration-wavy"}>BULU</a> campaign</p>
                 </div>
-                <Separator />
+                <Separator/>
                 <p>
-                    Bath University has cut the value of the bursary by 20% over the last 5 years. This is not
-                    sustainable for students in need. We need to stand together to ensure that the university is held
-                    accountable for its actions.
+                    Since at least 2017, the Bath Bursary has been losing value to inflation. This year marks
+                    not only a 20% decrease in the original bursary&apos;s effective value, but new effort from the University
+                    to further that trend to a tune of an overall <b>47%</b> decrease.
                 </p>
             </section>
+
             <section className={"w-full space-y-8"}>
                 <div
                     className={"flex flex-wrap gap-8 justify-around"}>
-
-                    <div className={"w-96 min-w-64 border-2 p-8 rounded shadow-lg"}>
+                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"}>
 
                         <div className={"inline-flex items-baseline h-16 text-primary"}>
-                            <p className={"font-black text-[45px]"}>20</p>
+                            <p className={"font-black text-[45px]"}>33</p>
                             <Percent className={'w-12 h-12'}/>
                         </div>
 
                         <div className={"relative w-fit text-primary"}>
-                            <h3 className={"font-bold text-xl"}>Decrease in effective value</h3>
+                            <h3 className={"font-bold text-xl"}>Decrease in value from 2023</h3>
                         </div>
-                        <p>Over the last 5 years alone the bursary worth has decreased by 20%, crippling students that
-                            need it the most.</p>
+                        <p>With this change the university is <b>eroding support</b> from those of us that need it the
+                            most.</p>
 
                         <Button className={"mt-4"} variant={"outline"}>
                             See the data
                         </Button>
                     </div>
 
-                    <div className={"w-96 min-w-64 border-2 p-8 rounded shadow-lg"}>
-
-                        <div className={"inline-flex h-16 items-baseline text-primary"}>
-                            <p className={"font-black text-[45px]"}>15</p>
-                            <Percent className={'w-12 h-12'}/>
-                            <p className={"text-muted-foreground h-fit"}>estimated</p>
-                        </div>
-
-                        <div className={"relative w-fit text-primary"}>
-                            <h3 className={"font-bold text-xl"}>Increase in applicable students</h3>
-                        </div>
-                        <p>Over the last 5 years alone the bursary worth has decreased by 20%, crippling students that
-                            need it the most.</p>
-
-                        <Button className={"mt-4"} variant={"outline"}>
-                            See the data
-                        </Button>
-                    </div>
-
-                    <div className={"w-96 min-w-64 border-2 p-8 rounded shadow-lg"}>
+                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"}>
 
                         <div className={"inline-flex align-baseline h-16 text-primary"}>
                             <p className={"font-black text-[45px] text-primary"}>20</p>
@@ -67,10 +49,35 @@ export default function Home() {
                         </div>
 
                         <div className={"relative w-fit text-primary"}>
-                            <h3 className={"font-bold text-xl"}>Decrease in bursary value</h3>
+                            <h3 className={"font-bold text-xl"}>Increase in income requirements</h3>
                         </div>
-                        <p>Over the last 5 years alone the bursary worth has decreased by 20%, crippling students that
-                            need it the most.</p>
+                        <p>
+                            The University has <b>increased</b> income requirements to £30,000 despite touting that
+                            these efforts are to increase accessibility.
+                        </p>
+
+                        <Button className={"mt-4"} variant={"outline"}>
+                            See the data
+                        </Button>
+                    </div>
+
+                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"}>
+
+                        <div className={"inline-flex h-16 items-baseline text-primary"}>
+                            <p className={"font-black text-[45px]"}>20,470</p>
+                        </div>
+
+                        <div className={"relative w-fit text-primary"}>
+                            <h3 className={"font-bold text-xl"}>of us effected</h3>
+                        </div>
+                        <p>The university <b>does not</b> publish figures on bursary usage, however with a record
+                            number of us attending the university and a cost of living crisis the bursary is more
+                            important
+                            than ever.
+                            <br/>
+                            <br/>
+                            This affects all of us.
+                        </p>
 
                         <Button className={"mt-4"} variant={"outline"}>
                             See the data
@@ -78,9 +85,11 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             <section className={"max-w-screen-xl w-full space-y-8"}>
-                <h2 className={"w-fit mx-auto uppercase font-extrabold text-3xl text-primary"}>They&apos;re removing <span
-                    className={"text-4xl"}>choice</span></h2>
+                <h2 className={"md:text-center uppercase font-extrabold text-3xl text-primary"}>They&apos;re
+                    removing <span
+                        className={"text-4xl"}>choice</span></h2>
                 <div>
                     <p>
                         Through diverting cash funds from the bursary into food and drink credits, the university is
@@ -99,7 +108,7 @@ export default function Home() {
 
             </section>
             <section className={"max-w-screen-xl w-full space-y-8"}>
-                <h2 className={"w-fit mx-auto uppercase font-extrabold text-3xl text-primary"}>It is <span
+                <h2 className={"md:text-center  uppercase font-extrabold text-3xl text-primary"}>It is <span
                     className={"text-4xl"}>unsustainable</span> for students</h2>
                 <div>
                     <p>
@@ -117,7 +126,7 @@ export default function Home() {
                 </div>
             </section>
             <section className={"max-w-screen-xl w-full space-y-8"}>
-                <h2 className={"w-fit mx-auto uppercase font-extrabold text-3xl text-primary"}>How to take <span
+                <h2 className={"md:text-center  uppercase font-extrabold text-3xl text-primary"}>How to take <span
                     className={"decoration-wavy underline"}>action</span></h2>
 
                 <p>

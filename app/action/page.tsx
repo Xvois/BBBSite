@@ -57,18 +57,27 @@ export default function ActionPlan() {
     ]
 
     return (
-        <main className="flex min-h-screen max-w-screen-lg mx-auto flex-col items-center p-8 lg:p-24 space-y-10">
-            <div className={"space-y-4 text-center"}>
-                <h1 className={"text-5xl font-black text-primary"}>
-                    The <span className={"underline decoration-wavy"}>Action Plan</span>
-                </h1>
+        <main>
+            <section className={"space-y-8"}>
+                <div>
+                    <h1 className={"font-black text-6xl"}> The <span
+                        className={"underline decoration-wavy decoration-primary"}>Action Plan</span></h1>
+                </div>
                 <Separator/>
                 <p>
-                    We have a plan to make sure the University listens to us.
+                    We are building a plan to fight for fairer access to education at Bath University. We will
+                    be asking SU candidates about what they will do about the bursary cutbacks, presenting a
+                    petition to the University Council to reverse the bursary cutbacks and leafleting, disruptiveness,
+                    leaving signs, info and messaging on campus.
                 </p>
+            </section>
+
+            <div>
+                <h2 className={"text-2xl text-primary font-black text-center"}>What you can do</h2>
             </div>
 
             <div className="relative h-full w-full space-y-10">
+                <h2 className={"text-2xl text-primary font-black text-center"}>Timeline</h2>
                 <div className="absolute inset-0 flex items-center">
                     <div className="w-2 h-full bg-primary"/>
                 </div>
