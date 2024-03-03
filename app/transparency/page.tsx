@@ -66,17 +66,13 @@ export default function Transparency() {
                         of the same page</a> from 2023.
                     </p>
                 </div>
-                <div id={'income'}>
-                    <q className={"text-muted-foreground md:text-xl"}>20% increase in income requirements</q>
+                <div id={'mobility'}>
+                    <q className={"text-muted-foreground md:text-xl"}>56th ranked for social mobility</q>
                     <p>
-                        The Bath Bursary income requirements has increased from an income assessment of £25,000 to
-                        £30,000. The £30,000 figure comes from the <a
-                        className={"text-primary underline decoration-wavy font-bold"}
-                        href={'https://www.bath.ac.uk/campaigns/the-bath-bursary/'}>University&apos;s website</a>.
-                        The £25,000 figure can be seen in <a
-                        className={"text-primary underline decoration-wavy font-bold"}
-                        href={'https://web.archive.org/web/20230725173228/https://www.bath.ac.uk/campaigns/the-bath-bursary/'}>archives
-                        of the same page</a> from 2023.
+                        The figure for the University of Bath&apos;s ranking for social mobility comes from the independent
+                        think tank <a className={"text-primary underline decoration-wavy font-bold"} href={"https://www.hepi.ac.uk/2023/10/19/2023-english-social-mobility-index/"}>hepi</a>.
+                        It is worth noting that this same data shows the university&apos;s social mobility ranking has
+                        decreased from 2022 to 2023.
                     </p>
                 </div>
                 <div id={'enrollment'}>

@@ -47,21 +47,21 @@ export default function About() {
 
                     <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"} aria-label={"figures for income requirements"}>
 
-                        <div className={"inline-flex align-baseline h-16 text-primary"}>
-                            <p className={"font-black text-[45px] text-primary"}>20</p>
-                            <Percent className={'w-12 h-12'} aria-label={"percent"}/>
+                        <div className={"inline-flex align-baseline h-16 text-10"}>
+                            <p className={"font-black text-[45px] text-primary"}>56</p>
+                            <p className={"font-black text-2xl text-primary"}>th</p>
                         </div>
 
                         <div className={"relative w-fit text-primary"}>
-                            <h3 className={"font-bold text-xl"}>Increase in income requirements</h3>
+                            <h3 className={"font-bold text-xl"}>ranked for social mobility</h3>
                         </div>
                         <p>
-                            The University has <b>increased</b> income requirements to £30,000 despite touting that
-                            these efforts are to increase accessibility.
+                            Bath University already ranks worse than 55 other universities for social mobility, including Oxford and Cambridge. This
+                            change only exacerbates the issue.
                         </p>
 
                         <Button className={"mt-4"} variant={"outline"} asChild>
-                            <Link href={'/transparency#income'}>
+                            <Link href={'/transparency#mobility'}>
                                 See the data
                             </Link>
                         </Button>
