@@ -127,9 +127,8 @@ export default function About() {
                     </p>
                     <br/>
                     <p>
-                        The university must understand that the bursary is a lifeline for many students and that it is
-                        unacceptable to cut its value. The university must provide sustainable support for students in
-                        need.
+                        They must understand that the bursary is a lifeline for many students and that it is
+                        unacceptable to cut its value.
                     </p>
                 </div>
             </section>

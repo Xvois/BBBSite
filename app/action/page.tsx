@@ -67,7 +67,7 @@ export default function ActionPlan() {
                 <p>
                     We are building a plan to fight for fairer access to education at Bath University. We will
                     be asking SU candidates about what they will do about the bursary cutbacks, presenting a
-                    petition to the University Council to reverse the bursary cutbacks and leafleting, disruptiveness,
+                    petition to the University Council to reverse the bursary cutbacks as well as leafleting,
                     leaving signs, info and messaging on campus.
                 </p>
             </section>
@@ -82,13 +82,7 @@ export default function ActionPlan() {
                         </p>
                     </li>
                     <li>
-                        <span className={"font-bold"}>Leafleting and posters.</span>
-                        <p className={"text-sm text-muted-foreground"}>
-                            We need to get the word out to as many people as possible.
-                        </p>
-                    </li>
-                    <li>
-                        <span className={"font-bold"}>Mass emailing.</span>
+                        <span className={"font-bold"}>Leafleting, posters & mass emailing.</span>
                         <p className={"text-sm text-muted-foreground"}>
                             We need to get the word out to as many people as possible.
                         </p>
@@ -96,7 +90,7 @@ export default function ActionPlan() {
                     <li>
                         <span className={"font-bold"}>Reach out to societies and clubs.</span>
                         <p className={"text-sm text-muted-foreground"}>
-                            We need to get the word out to as many people as possible.
+                            Encourage your society or club to support the campaign and spread the word.
                         </p>
                     </li>
                     <li>
