@@ -58,7 +58,7 @@ export default function ActionPlan() {
 
     return (
         <main className="space-y-10">
-            <section className={"space-y-8"}>
+            <section className={"space-y-8"} aria-label={"introduction"}>
                 <div>
                     <h1 className={"font-black text-6xl"}> The <span
                         className={"underline decoration-wavy decoration-primary"}>Action Plan</span></h1>
@@ -72,7 +72,7 @@ export default function ActionPlan() {
                 </p>
             </section>
 
-            <section className={"space-y-8"}>
+            <section className={"space-y-8"} aria-label={"what you can do"}>
                 <h2 className={"text-2xl text-primary font-black text-center"}>What you can do</h2>
                 <ul className="list-disc pl-5 space-y-4">
                     <li>
@@ -119,7 +119,7 @@ export default function ActionPlan() {
                 </ul>
             </section>
 
-            <section className="relative h-full w-full space-y-8">
+            <section className="relative h-full w-full space-y-8" aria-label={"timeline"}>
                 <h2 className={"text-2xl text-primary font-black text-center"}>Timeline</h2>
                 <div className="absolute inset-0 flex items-center">
                     <div className="w-2 h-full bg-primary"/>

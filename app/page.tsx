@@ -7,14 +7,14 @@ export default function About() {
     return (
         <main className="space-y-10">
 
-            <section className={"space-y-8"}>
+            <section className={"space-y-8"} aria-label={"heading"}>
                 <div>
                     <h1 className={"font-black text-5xl md:text-6xl"}>BUILD BACK BURSARIES</h1>
                     <p>a <a href={'https://www.thesubath.com/bulu/'}
                             className={"font-black text-primary underline decoration-wavy"}>BULU</a> campaign</p>
                 </div>
                 <Separator/>
-                <p>
+                <p aria-label={"opening remarks"}>
                     Since at least 2017, the Bath Bursary has been losing value to inflation. This year marks
                     not only a 20% decrease in the original bursary&apos;s effective value, but new effort from the
                     University
@@ -22,14 +22,14 @@ export default function About() {
                 </p>
             </section>
 
-            <section className={"w-full space-y-8"}>
+            <section className={"w-full space-y-8"} aria-label={"key figures"}>
                 <div
                     className={"flex flex-wrap gap-8 justify-around"}>
-                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"}>
+                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"} aria-label={"figures for bursary value"}>
 
                         <div className={"inline-flex items-baseline h-16 text-primary"}>
                             <p className={"font-black text-[45px]"}>33</p>
-                            <Percent className={'w-12 h-12'}/>
+                            <Percent className={'w-12 h-12'} aria-label={"percent"}/>
                         </div>
 
                         <div className={"relative w-fit text-primary"}>
@@ -45,11 +45,11 @@ export default function About() {
                         </Button>
                     </div>
 
-                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"}>
+                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"} aria-label={"figures for income requirements"}>
 
                         <div className={"inline-flex align-baseline h-16 text-primary"}>
                             <p className={"font-black text-[45px] text-primary"}>20</p>
-                            <Percent className={'w-12 h-12 text-primary'}/>
+                            <Percent className={'w-12 h-12'} aria-label={"percent"}/>
                         </div>
 
                         <div className={"relative w-fit text-primary"}>
@@ -67,7 +67,7 @@ export default function About() {
                         </Button>
                     </div>
 
-                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"}>
+                    <div className={"w-96 min-w-64 flex-grow border-2 p-8 rounded shadow-lg"} aria-label={"figures for student population"}>
 
                         <div className={"inline-flex h-16 items-baseline text-primary"}>
                             <p className={"font-black text-[45px]"}>20,470</p>
@@ -94,7 +94,7 @@ export default function About() {
                 </div>
             </section>
 
-            <section className={"max-w-screen-xl w-full space-y-8"}>
+            <section className={"max-w-screen-xl w-full space-y-8"} aria-label={"removing choice"}>
                 <h2 className={"md:text-center uppercase font-extrabold text-3xl text-primary"}>They&apos;re
                     removing <span
                         className={"text-4xl"}>choice</span></h2>
@@ -115,7 +115,7 @@ export default function About() {
                 </div>
 
             </section>
-            <section className={"max-w-screen-xl w-full space-y-8"}>
+            <section className={"max-w-screen-xl w-full space-y-8"} aria-label={"unsustainability"}>
                 <h2 className={"md:text-center  uppercase font-extrabold text-3xl text-primary"}>It is <span
                     className={"text-4xl"}>unsustainable</span> for students</h2>
                 <div>
@@ -133,7 +133,7 @@ export default function About() {
                     </p>
                 </div>
             </section>
-            <section className={"max-w-screen-xl w-full space-y-8"}>
+            <section className={"max-w-screen-xl w-full space-y-8"} aria-label={"action"}>
                 <h2 className={"md:text-center  uppercase font-extrabold text-3xl text-primary"}>How to take <span
                     className={"decoration-wavy underline"}>action</span></h2>
 
@@ -146,8 +146,8 @@ export default function About() {
                 </p>
 
                 <div className={"flex flex-col space-y-4 w-fit mx-auto"}>
-                    <Button asChild>
-                        <Link href={"https://chng.it/d228JWxPRd"}>Sign the petition</Link>
+                    <Button asChild variant={"default"} className={"hover:bg-primary"}>
+                        <Link className={"bg-primary"} href={"https://chng.it/d228JWxPRd"}>Sign the petition</Link>
                     </Button>
                     <Button variant={"secondary"} asChild>
                         <Link href={"/action"}>View the Action Plan</Link>
