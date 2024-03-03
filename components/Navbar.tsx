@@ -15,8 +15,8 @@ export const Navbar = () => {
     const pathname = usePathname()
 
     return (
-        <NavigationMenu className={"mx-auto my-4"}>
-            <NavigationMenuList>
+        <NavigationMenu className={"mx-auto mb-4 max-w-full"}>
+            <NavigationMenuList className={"flex flex-wrap items-center"}>
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink

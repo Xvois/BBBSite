@@ -9,14 +9,16 @@ export default function About() {
 
             <section className={"space-y-8"}>
                 <div>
-                    <h1 className={"font-black text-6xl"}>BUILD BACK BURSARIES</h1>
-                    <p>a <a href={'https://www.thesubath.com/bulu/'} className={"font-black text-primary underline decoration-wavy"}>BULU</a> campaign</p>
+                    <h1 className={"font-black text-5xl md:text-6xl"}>BUILD BACK BURSARIES</h1>
+                    <p>a <a href={'https://www.thesubath.com/bulu/'}
+                            className={"font-black text-primary underline decoration-wavy"}>BULU</a> campaign</p>
                 </div>
                 <Separator/>
                 <p>
                     Since at least 2017, the Bath Bursary has been losing value to inflation. This year marks
-                    not only a 20% decrease in the original bursary&apos;s effective value, but new effort from the University
-                    to further that trend to a tune of an overall <b>47%</b> decrease.
+                    not only a 20% decrease in the original bursary&apos;s effective value, but new effort from the
+                    University
+                    to further that trend to a tune of an overall <b>47%</b> decrease since 2017.
                 </p>
             </section>
 
@@ -36,8 +38,10 @@ export default function About() {
                         <p>With this change the university is <b>eroding support</b> from those of us that need it the
                             most.</p>
 
-                        <Button className={"mt-4"} variant={"outline"}>
-                            See the data
+                        <Button className={"mt-4"} variant={"outline"} asChild>
+                            <Link href={'/transparency#value'}>
+                                See the data
+                            </Link>
                         </Button>
                     </div>
 
@@ -56,8 +60,10 @@ export default function About() {
                             these efforts are to increase accessibility.
                         </p>
 
-                        <Button className={"mt-4"} variant={"outline"}>
-                            See the data
+                        <Button className={"mt-4"} variant={"outline"} asChild>
+                            <Link href={'/transparency#income'}>
+                                See the data
+                            </Link>
                         </Button>
                     </div>
 
@@ -79,8 +85,10 @@ export default function About() {
                             This affects all of us.
                         </p>
 
-                        <Button className={"mt-4"} variant={"outline"}>
-                            See the data
+                        <Button className={"mt-4"} variant={"outline"} asChild>
+                            <Link href={'/transparency#enrollment'}>
+                                See the data
+                            </Link>
                         </Button>
                     </div>
                 </div>
@@ -137,13 +145,13 @@ export default function About() {
                     accountable for its actions.
                 </p>
 
-                <p>
-                    View the <Link href={'/action'} className={"underline text-primary font-bold"}>Action Plan</Link>.
-                </p>
-
-                <div className={"inline-flex space-x-4"}>
-                    <Button>Sign the petition</Button>
-                    <Button variant={"secondary"}>Join the cause</Button>
+                <div className={"flex flex-col space-y-4 w-fit mx-auto"}>
+                    <Button asChild>
+                        <Link href={"https://chng.it/d228JWxPRd"}>Sign the petition</Link>
+                    </Button>
+                    <Button variant={"secondary"} asChild>
+                        <Link href={"/action"}>View the Action Plan</Link>
+                    </Button>
                 </div>
 
 

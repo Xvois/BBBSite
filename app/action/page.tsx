@@ -57,7 +57,7 @@ export default function ActionPlan() {
     ]
 
     return (
-        <main>
+        <main className="space-y-10">
             <section className={"space-y-8"}>
                 <div>
                     <h1 className={"font-black text-6xl"}> The <span
@@ -72,11 +72,54 @@ export default function ActionPlan() {
                 </p>
             </section>
 
-            <div>
+            <section className={"space-y-8"}>
                 <h2 className={"text-2xl text-primary font-black text-center"}>What you can do</h2>
-            </div>
+                <ul className="list-disc pl-5 space-y-4">
+                    <li>
+                        <span className={"font-bold"}>Encourage others to sign the petition.</span>
+                        <p className={"text-sm text-muted-foreground"}>
+                            The more people that sign, the more likely the University will listen.
+                        </p>
+                    </li>
+                    <li>
+                        <span className={"font-bold"}>Leafleting and posters.</span>
+                        <p className={"text-sm text-muted-foreground"}>
+                            We need to get the word out to as many people as possible.
+                        </p>
+                    </li>
+                    <li>
+                        <span className={"font-bold"}>Mass emailing.</span>
+                        <p className={"text-sm text-muted-foreground"}>
+                            We need to get the word out to as many people as possible.
+                        </p>
+                    </li>
+                    <li>
+                        <span className={"font-bold"}>Reach out to societies and clubs.</span>
+                        <p className={"text-sm text-muted-foreground"}>
+                            We need to get the word out to as many people as possible.
+                        </p>
+                    </li>
+                    <li>
+                        <span className={"font-bold"}>Freedom of Information requests.</span>
+                        <ul className="list-[circle] pl-5">
+                            <li>
+                                How many students receive the Bath Bursary?
+                                <p className={"text-sm text-muted-foreground"}>
+                                    We have the right to know how many students will be affected by the cutbacks.
+                                </p>
+                            </li>
+                            <li >
+                                How much money does the university spend per year in total on scholarships?
+                                <p className={"text-sm text-muted-foreground"}>
+                                    We need to know how much money the university has to support students.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-            <div className="relative h-full w-full space-y-10">
+            <section className="relative h-full w-full space-y-8">
                 <h2 className={"text-2xl text-primary font-black text-center"}>Timeline</h2>
                 <div className="absolute inset-0 flex items-center">
                     <div className="w-2 h-full bg-primary"/>
@@ -86,7 +129,7 @@ export default function ActionPlan() {
                     return <Event key={i} e={e}/>
                 })}
 
-            </div>
+            </section>
         </main>
     )
 }
