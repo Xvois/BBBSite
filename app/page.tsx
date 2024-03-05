@@ -27,7 +27,7 @@ export default function About() {
                     <Button asChild variant={"default"} size={"lg"} className={"hover:bg-primary"}>
                         <Link className={"bg-primary"} href={"https://chng.it/d228JWxPRd"}>Sign the petition</Link>
                     </Button>
-                    <div className={"absolute -top-10 -left-[5.5em] rotate-2"}>
+                    <div className={"absolute -top-10 -left-[5.5em] rotate-2 -z-10"}>
                         <DrawnOval/>
                     </div>
                 </div>
